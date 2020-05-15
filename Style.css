@@ -1,0 +1,220 @@
+@charset "UTF-8";
+
+@charset "ISO-8859-1";
+@import url(https://fonts.googleapis.com/css?family=Bangers);
+
+.header
+{
+	padding: 5%;
+	text-align: center;
+	background-color: #fff;
+}
+
+.bod
+{
+	font-family: 'Lato', sans-serif;
+	color: #333;
+    background-color: rgb(7, 74, 117);
+}
+
+.login
+{
+	position: absolute;
+	font-size: 3vw;
+	color: white;
+}
+
+input[type=text] 
+{
+    position: absolute;
+    text-align: left;
+    height:5%;
+    padding-left: 10px;
+    border: 3px;
+    font-size: 1vw;
+    border-radius:2%;
+}
+
+input[type=email] 
+{
+    position: absolute;
+    text-align: left;
+    height:5%;
+    padding-left: 10px;
+    border: 3px;
+    font-size: 1vw;
+    border-radius:2%;
+}
+
+input[type=password]
+{
+    position: absolute;
+    text-align: left;
+    height:5%;
+    padding-left: 10px;
+    border: 3px;
+    font-size: 1vw;
+    border-radius:2%;
+}
+
+.Font
+{
+	position: absolute;
+	font-size: 1.2vw;
+	color: white;
+}
+
+.fpsw
+{
+    position: absolute;
+    left:40vw;
+    top: 38vw;
+    color: white;
+    font-size: 0.9vw;
+}
+
+.fpsf
+{
+    position: absolute;
+    left:40vw;
+    top: 35vw;
+    color: white;
+    font-size: 0.9vw;
+}
+
+
+.login_btn
+{
+	position: absolute;
+    left:65vw;
+    top: 29.5vw;
+    color: black;
+    font-size: 1vw;
+    cursor:pointer;
+    padding: 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+}
+
+.resetpass_btn
+{
+	position: absolute;
+    left:60vw;
+    top: 35vw;
+    color: black;
+    font-size: 1vw;
+    cursor:pointer;
+    padding: 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+}
+
+.reset_btn
+{
+	position: absolute;
+    left:75vw;
+    top: 29.5vw;
+    color: black;
+    font-size: 1vw;
+    cursor:pointer;
+    padding: 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+}
+
+.round-button 
+{
+	position: absolute;
+    left:0px;
+    color: white;
+    cursor:pointer;
+    text-align:centre;
+    width: 90px;
+    height: 100px;
+    background-color:#3C4542;
+    border: none;
+}
+
+.round-button:hover
+{
+	background-color:rgb(7, 74, 117);
+}
+
+.side
+{
+	height:100%;
+	width:90px;
+	background-color:#3C4542;
+	position:fixed!important;
+	z-index:1;
+	overflow:auto;
+}
+
+.right-side
+{
+	position:fixed!important;
+	top: 0px;
+	left: 70px;
+	width:100%;
+	height:100%;
+}
+
+
+.subnav-button {
+	position: absolute;
+	left:0px;
+    color: white;
+    cursor:pointer;
+    text-align:centre;
+    width: 90px;
+    height: 100px;
+    background-color:##F5F3F2;
+    border: none;
+}
+
+.head
+{
+	position: absolute;
+	font-size: 3vw;
+	color: rgb(7, 74, 117);
+}
+
+.head1
+{
+	position: absolute;
+	font-size: 1vw;
+	color: rgb(7, 74, 117);
+}
+
+p
+{
+	font-size: 12px; 
+}
+
+
+.image_individual
+{
+	left:90px;
+	width:100%;
+	height:100%;
+}
+
+.perfom-button
+{
+	position: absolute;
+	left: 970px;
+	top: 100px;
+	background-color: rgb(7, 74, 117);
+	color: white;
+	border-radius: 50px;
+	padding: 0px 80px;
+	border: none;
+	height: 40px;
+	text-align:centre;
+}

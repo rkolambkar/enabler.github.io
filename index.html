@@ -1,31 +1,64 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <link rel="stylesheet" href="styles.css">
-    
+<html>
+<head>
+    <title> Enabler Interactive</title>
+    <link rel="stylesheet" type="text/css" href="Style.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <script src="https://public.tableau.com/javascripts/api/tableau-2.min.js"></script>
     <script src="tableau.js"></script>
+    <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+    <df-messenger intent="WELCOME" chat-title="demoassistant" agent-id="3ca8c1f5-cfea-4b1c-84fd-91613a21f325" language-code="en"></df-messenger>
+</head>
+<body>
 
-    <title> Enabler Interactive</title>
-    <h1> Implementing Dashbaord to the website</h1>
-  </head>
-  <body onload="initViz();">
-    <div id="vizContainer"></div>
+<h1 class = "head" style="top: 300px; left: 330px;">Welcome to Enabler Interactive Dashboard</h1>
+<p class = "head1" style="top: 30px; left: 140px;">Please select the left tabs to view the contents.</p>
 
-    <header>
-      <div class="main">
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Technology</a></li>
-          <li><a href="#">Contact</a></li>
-          <li><a href="#">Login</a></li>
+<div class= "side">
+	<button class ="round-button" style="top: 30px;"><img src="https://app.enablerinteractive.com/assets/images/Icons/organisation%20logo.png" style="width: 60%;"><p>Deakin University</p></button>
+	<button class ="round-button" onclick="selectingTab('workforce-nav')" style="top: 140px;"><img src="https://app.enablerinteractive.com/assets/images/Icons/icon_workflow_circled.png" style="width: 60%;"><p>Workforce</p></button>
+	<button class ="round-button" onclick="selectingTab('training-nav')" style="top: 230px;"><img src="https://app.enablerinteractive.com/assets/images/Icons/icon_content_circled.png" style="width: 60%;"><p>Training</p></button>
+	<button class ="round-button" onclick="selectingTab('group_performance')" style="top: 320px;"><img src="https://png.pngtree.com/png-vector/20190115/ourlarge/pngtree-vector-seo-performance-icon-png-image_320931.jpg" style="width: 60%; border-radius: 50%;"><p>Performance</p></button>
+	<button class ="round-button" style="top: 410px;"><img src="https://app.enablerinteractive.com/assets/images/Icons/icon_settings_circled.png" style="width: 60%;"><p>Settings</p></button>
+	<form method="post" action="logout.php">
+		<button type="submit" class ="round-button" style="top: 750px;"><img src="https://app.enablerinteractive.com/assets/images/Icons/icon_logout_circled.png" style="width: 60%;"><p>Logout</p></button>
+	</form>
+	
+</div>
 
+<div class="right-side">
 
-        </ul>
+	<div id="indi_performance" class="w3-container tab" style="display:none">
+		<iframe src="https://public.tableau.com/views/enabler_individual_15877254057840/Dashboard1?:display_count=y&publish=yes&:origin=viz_share_link:showVizHome=no&:embed=true"
+ width="1340" height="900"></iframe>
+	</div>
+	
+	<div id="group_performance" class="w3-container tab" style="display:none">
+	  <iframe src="https://public.tableau.com/views/enabler_organization/Dashboard1?:display_count=y&publish=yes&:origin=viz_share_link:showVizHome=no&:embed=true"
+ width="1340" height="900"></iframe>
+	</div>
 
-      </div>
-    </header>
+	<div id="workforce-nav" class="w3-container tab" style="display:none;">
+		<img src="individual.png" class="image_individual">
+		<button class ="perfom-button" onclick="selectingTab('indi_performance')"><p>Overall Performance</p></button>
+	</div>
+	
+	<div id="training-nav" class="w3-container tab" style="display:none;">
+		<img src="training.png" class="image_individual">
+	</div>
+	
+</div>
+    <script type="text/javascript">
+    
+	    function selectingTab(tabname) {
+	  	  var i;
+	  	  var x = document.getElementsByClassName("tab");
+	  	  for (i = 0; i < x.length; i++) {
+	  	    x[i].style.display = "none";  
+	  	  }
+	  	  document.getElementById(tabname).style.display = "block";  
+	  	}
 
+    </script>
   </body>
 </html>
